@@ -1,0 +1,79 @@
+
+.home-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: #3275DB;
+    color: white;
+    padding: 1rem 0;
+}
+.home-top-left{
+    display: flex;
+    font-size: 1rem;
+    gap: 3rem;
+}
+.left-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-top-left span{
+    padding-left: 1rem;
+}
+
+
+
+/* home top right  */
+
+
+.home-top-right{
+    display: flex;
+    justify-content: space-between;
+
+}
+.top-right-contact{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.account{
+    display: flex;
+    margin-left: 5rem;
+}
+.account span{
+    padding: 0 1rem; 
+}
+.account span:hover{
+    cursor: pointer;
+}
+.account .userPic{
+    cursor: pointer;
+}
+
+
+@media (min-width : 900px) and (max-width : 1200px){
+    .home-top-left span{
+        padding-left: .8rem;
+    }
+}
+@media (min-width : 768px) and (max-width : 899px){
+    .home-top{
+        flex-direction: column-reverse;
+        font-size: 2rem;
+
+    }
+    .home-top-left{
+        font-size: 1.5rem;
+    }
+
+    .home-top-left span{
+        padding-left: .6rem;
+    }
+}
+@media  (max-width : 767px){
+    .home-top-left{
+        display: none;
+    }
+}
